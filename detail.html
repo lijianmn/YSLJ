@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>月子餐 - 第X天</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container detail-container">
+        <header>
+            <a href="index.html" class="back-link">← 返回列表</a>
+            <h1>🍼 月子餐记录</h1>
+        </header>
+
+        <div class="theme-section" id="themeSection">
+            <div class="theme-badge">第 <span id="dayNumber">1</span> 天</div>
+            <h2 id="dateTitle">2026年6月25日</h2>
+            <div class="theme-label">月子餐</div>
+        </div>
+
+        <div class="content-section">
+            <h3 class="section-title">🍽️ 今日菜单</h3>
+            
+            <div class="meal-card breakfast-card">
+                <div class="meal-header">
+                    <span class="meal-icon">🍳</span>
+                    <span class="meal-name">早餐</span>
+                </div>
+                <div class="meal-content" id="breakfastContent">
+                    <ul id="breakfastList"></ul>
+                </div>
+            </div>
+
+            <div class="meal-card lunch-card">
+                <div class="meal-header">
+                    <span class="meal-icon">🍛</span>
+                    <span class="meal-name">午餐</span>
+                </div>
+                <div class="meal-content" id="lunchContent">
+                    <ul id="lunchList"></ul>
+                </div>
+            </div>
+
+            <div class="meal-card dinner-card">
+                <div class="meal-header">
+                    <span class="meal-icon">🍲</span>
+                    <span class="meal-name">晚餐</span>
+                </div>
+                <div class="meal-content" id="dinnerContent">
+                    <ul id="dinnerList"></ul>
+                </div>
+            </div>
+
+            <div class="snack-card" id="snackCard" style="display: none;">
+                <div class="meal-header">
+                    <span class="meal-icon">🍎</span>
+                    <span class="meal-name">加餐</span>
+                </div>
+                <div class="meal-content" id="snackContent">
+                    <ul id="snackList"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="notes-section" id="notesSection">
+            <h3 class="section-title">📝 注意事项</h3>
+            <div class="notes-content" id="notesContent">
+                <p>暂无注意事项</p>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <button id="prevDay" class="nav-btn">上一天</button>
+            <button id="nextDay" class="nav-btn">下一天</button>
+        </div>
+
+        <footer>
+            <p>扫码查看每日月子餐</p>
+        </footer>
+
+        <div class="font-size-controls">
+            <button class="font-size-btn" id="fontIncrease">A+</button>
+            <div class="font-size-indicator" id="fontSizeIndicator">16px</div>
+            <button class="font-size-btn" id="fontDecrease">A-</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>月子餐记录</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍼 月子餐记录</h1>
+            <p class="subtitle">用心呵护每一天</p>
+        </header>
+
+        <div class="settings-section">
+            <div class="setting-item">
+                <label for="startDate">设置开始日期</label>
+                <input type="date" id="startDate">
+            </div>
+            <button id="applyDate" class="btn btn-primary">应用设置</button>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-text">
+                <span>已完成 <span id="completedDays">0</span> 天</span>
+                <span>共 42 天</span>
+            </div>
+        </div>
+
+        <div class="days-grid" id="daysGrid"></div>
+
+        <footer>
+            <p>扫码查看每日月子餐</p>
+        </footer>
+
+        <div class="font-size-controls">
+            <button class="font-size-btn" id="fontIncrease">A+</button>
+            <div class="font-size-indicator" id="fontSizeIndicator">16px</div>
+            <button class="font-size-btn" id="fontDecrease">A-</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
